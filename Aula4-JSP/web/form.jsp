@@ -12,7 +12,7 @@
         <title>Formulário - WebAppJsp</title>
     </head>
     <body>
-        <h3><a href="index.jsp">Voltar</a></h3>
+        <%@include file="WEB-INF/jspf/header.jspf"%>
         <h1>WebAppJsp</h1>
         <h2>Formulário</h2>
         <% if (request.getParameter("enviar")==null) {%>

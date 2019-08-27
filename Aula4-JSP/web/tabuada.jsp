@@ -12,18 +12,20 @@
         <title>Tabuada - WebAppJsp</title>
     </head>
     <body>
-        <h3><a href="index.jsp">Voltar</a></h3>
+        <%@include file="WEB-INF/jspf/header.jspf"%>
         <h1>Tabuada WebAppJsp</h1>
         <h2>Tabuada</h2>
         <%if(request.getParameter("mostrar")!=null){%>
             <%try{%>
                 <%int n = Integer.parseInt(request.getParameter("num"));%>
                 <table border="1">  
-                    <%for(int i=1;i<=10;i++){%>
-                    <tr>
-                        <th><%= i%>*<%=n%></th>
-                        <td><%= i*n %></td>
-                    </tr>
+                    <%for(int i=1;i<=n;i++){%>
+                        <tr>
+                        <%for(int j=1;j<=10;j++){%>
+                                <th><%= i%>*<%=j%></th>
+                                <td><%= i*j %></td>
+                        <%}%>
+                        </tr>
                     <%}%>
                 </table>
             <%}catch(Exception ex){%>
