@@ -17,5 +17,6 @@
         <h1>WebAppJsp</h1>
         <h2>Data/hora com expression</h2>
         <h3><%= new Date()%></h3>
+        <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

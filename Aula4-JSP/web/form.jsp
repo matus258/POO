@@ -26,6 +26,6 @@
             <%String idade = request.getParameter("idade");%>
             Seu nome é <%=nome%> e você tem <%=idade%> anos.
         <%}%>   
-
+        <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

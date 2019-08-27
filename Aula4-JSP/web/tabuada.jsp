@@ -32,5 +32,6 @@
                 <h3 style="color: red"><%=ex.getMessage()%></h3>
             <%}%>
         <%}%>
+        <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

@@ -18,5 +18,6 @@
         <h2>Página Inicial</h2>
         <% Date agora = new Date();%>
         <h3><%out.println(agora);%></h3>
+        <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>
